@@ -17,9 +17,9 @@ public class Fabricante {
         for (int i = 0; i < fabricantes.size(); i++) {
             unidades[i] = 0;
         }
-        int indece = 0;
+        int indice = 0;
         for (Fabricante fabrica : fabricantes) {
-            for (Vehiculo vehiculo : Vehiculo.vehiculos) {
+            for (Vehiculo vehiculo : Vehiculo.tipoVehiculos) {
                 if (vehiculo.getFabricante() == fabrica) {
                     unidades[fabricantes.indexOf(fabrica)]++;
                 }
@@ -29,10 +29,10 @@ public class Fabricante {
         for (int i = 1; i < unidades.length; i++) {
             if (unidades[i] > mayorFabricante) {
                 mayorFabricante = unidades[i];
-                indece=i;
+                indice=i;
             }
         }
-      return fabricantes.get(indece);
+      return fabricantes.get(indice);
     }
     public String getNombre() {
         return nombre;

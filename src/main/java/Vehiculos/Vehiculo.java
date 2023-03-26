@@ -3,16 +3,16 @@ package vehiculos;
 import java.util.ArrayList;
 
 public class Vehiculo {
-    private String placa;
-    private int puertas;
-    private int velocidadMaxima;
-    private String nombre;
-    private int precio;
-    private int peso;
-    private String traccion;
-    private Fabricante fabricante;
+    protected String placa;
+    protected int puertas;
+    protected int velocidadMaxima;
+    protected String nombre;
+    protected int precio;
+    protected int peso;
+    protected String traccion;
+    protected Fabricante fabricante;
     private static int cantidadVehiculos;
-    public static ArrayList<Vehiculo>vehiculos=new ArrayList<Vehiculo>();
+    public static ArrayList<Vehiculo>tipoVehiculos=new ArrayList<Vehiculo>();
 
 
     public Vehiculo (String placa,int puertas,int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante){
