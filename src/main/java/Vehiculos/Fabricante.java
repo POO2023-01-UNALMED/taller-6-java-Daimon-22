@@ -12,16 +12,16 @@ public class Fabricante {
         this.pais=pais;
         fabricantes.add(this);
     }
-    public static Fabricante fabricaMayorVenta() {
+    public static Fabricante fabricaMayorVentas() {
         int[] unidades = new int[fabricantes.size()];
         for (int i = 0; i < fabricantes.size(); i++) {
             unidades[i] = 0;
         }
         int indice = 0;
-        for (Fabricante fabrica : fabricantes) {
+        for (Fabricante a : fabricantes) {
             for (Vehiculo vehiculo : Vehiculo.tipoVehiculos) {
-                if (vehiculo.getFabricante() == fabrica) {
-                    unidades[fabricantes.indexOf(fabrica)]++;
+                if (vehiculo.getFabricante() == a) {
+                    unidades[fabricantes.indexOf(a)]++;
                 }
             }
         }

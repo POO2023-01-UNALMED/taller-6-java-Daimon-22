@@ -12,7 +12,7 @@ public class Pais {
     }
     public static Pais paisMasVendedor(){
         int[] unidades = new int[paises.size()];
-        for(int i=0; i<paises.size();i++){
+        for(int i=0; i<paises.size(); i++){
             unidades[i]=0;
         }
         int indice=0;
